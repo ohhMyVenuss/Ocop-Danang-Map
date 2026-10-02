@@ -1,0 +1,74 @@
+/**
+ * OCOP Đà Nẵng Map - Custom Styles
+ * Reset theme conflicts, Leaflet fixes & Smooth Bottom Sheet Animations
+ */
+
+/* Khắc phục xung đột CSS của theme WordPress với Leaflet tile images */
+.ocop-map-container img.leaflet-tile,
+.ocop-form-wrapper img.leaflet-tile {
+    max-width: none !important;
+    max-height: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Tinh chỉnh Leaflet Container */
+.ocop-map-container .leaflet-container {
+    font-family: inherit;
+    z-index: 10;
+}
+
+/* Custom DivIcon cho Marker */
+.ocop-leaflet-div-icon {
+    background: transparent !important;
+    border: none !important;
+}
+
+.ocop-marker-pin {
+    will-change: transform;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ocop-marker-pin:active {
+    transform: scale(0.92);
+}
+
+/* Bottom Sheet Container & Animations */
+.ocop-bottom-sheet-content {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+
+/* Tùy chỉnh thanh cuộn siêu mỏng đẹp cho Bottom Sheet */
+.ocop-bottom-sheet-content::-webkit-scrollbar {
+    width: 5px;
+}
+.ocop-bottom-sheet-content::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+.ocop-bottom-sheet-content::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+
+/* Pulse định vị người dùng */
+.ocop-user-location-pulse {
+    background: transparent;
+    border: none;
+}
+
+/* Đảm bảo touch target tối thiểu 44px trên thiết bị di động */
+@media (max-width: 640px) {
+    .ocop-touch-target {
+        min-height: 48px;
+    }
+}
+
+/* Hỗ trợ hiển thị trên Elementor & Gutenberg */
+.elementor-widget-shortcode .ocop-map-wrapper,
+.wp-block-shortcode .ocop-map-wrapper {
+    width: 100%;
+}
