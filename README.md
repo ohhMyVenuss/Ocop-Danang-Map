@@ -4,13 +4,13 @@ Plugin WordPress độc lập phục vụ mạng lưới **Du lịch trải nghi
 
 ---
 
-## 🌟 Tính Năng Nổi Bật (Senior UI/UX Standards)
+##  Tính Năng Nổi Bật (Senior UI/UX Standards)
 
 1. **Giao diện Di động Thông minh (Mobile-First)**:
    - Tối ưu hóa 100% cảm ứng (Touch UI). Nút bấm lớn, padding rộng rãi, hỗ trợ cử chỉ vuốt chạm mượt mà.
    - Thẻ thông tin điểm đến trên di động hiển thị dạng **Bottom Sheet** (trượt từ đáy màn hình lên), tích hợp thanh kéo vuốt, nền làm mờ Backdrop, đóng mở tự nhiên thay thế hoàn toàn dạng bóng bay (balloon popup) truyền thống của Leaflet.
 2. **Hệ Thống Icon Chuẩn Vector (FontAwesome 6)**:
-   - **Tuyệt đối không dùng text emoji** (như ⭐, 📍, 🛒) – toàn bộ icon nút, sao xếp hạng và ghim bản đồ đều là vector sắc nét.
+   - **Tuyệt đối không dùng text emoji** toàn bộ icon nút, sao xếp hạng và ghim bản đồ đều là vector sắc nét.
 3. **Phân Cấp Ghim Theo Hạng Sao OCOP**:
    - **5 Sao (Quốc gia)**: Ghim Đỏ Cam / Crimson Red (`#e11d48`) kèm hiệu ứng phát sáng Pulse.
    - **4 Sao (Cấp Tỉnh/TP)**: Ghim Vàng Gold / Amber (`#d97706`).
@@ -24,7 +24,7 @@ Plugin WordPress độc lập phục vụ mạng lưới **Du lịch trải nghi
 
 ---
 
-## 📁 Cấu Trúc Thư Mục Plugin
+## Cấu Trúc Thư Mục Plugin
 
 ```
 ocop-danang-map/
@@ -46,7 +46,7 @@ ocop-danang-map/
 
 ---
 
-## 🚀 Hướng Dẫn Cài Đặt (Installation)
+## Hướng Dẫn Cài Đặt (Installation)
 
 ### Cách 1: Tải trực tiếp vào thư mục WordPress
 1. Copy hoặc tải toàn bộ thư mục `ocop-danang-map` vào đường dẫn:
@@ -64,7 +64,7 @@ ocop-danang-map/
 
 ---
 
-## 🧩 Hướng Dẫn Chèn Shortcode Bằng Elementor
+## Hướng Dẫn Chèn Shortcode Bằng Elementor
 
 Plugin cung cấp 2 shortcode độc lập, dễ dàng chèn vào bất kỳ trang nào bằng trình dựng trang **Elementor** hoặc **Gutenberg**:
 
@@ -99,7 +99,7 @@ Plugin cung cấp 2 shortcode độc lập, dễ dàng chèn vào bất kỳ tra
 
 ---
 
-## 🔄 Quy Trình Vận Hành & Quản Trị (Workflow)
+## Quy Trình Vận Hành & Quản Trị (Workflow)
 
 ```
 [Chủ HTX Điền Form & Chấm Tọa Độ Trên Bản Đồ]
@@ -123,13 +123,10 @@ Plugin cung cấp 2 shortcode độc lập, dễ dàng chèn vào bất kỳ tra
 
 ---
 
-## 📡 REST API Endpoint
+## REST API Endpoint
 
 - **URL**: `GET /wp-json/ocop/v1/locations`
 - **Bộ lọc**: `GET /wp-json/ocop/v1/locations?stars=5`
 - **Dữ liệu trả về**: Mảng JSON chứa ID, tên điểm đến, tọa độ `lat`/`lng`, hạng sao `stars`, địa chỉ, hotline, link đặt lịch trải nghiệm, link gian hàng và ảnh đại diện.
 
 ---
-
-## 🛡️ Bản Quyền & Giấy Phép
-Dự án được phát triển chuyên biệt cho ngành Du lịch nông nghiệp & Xúc tiến thương mại Thành phố Đà Nẵng. Giấy phép mã nguồn mở GPL-2.0+.
